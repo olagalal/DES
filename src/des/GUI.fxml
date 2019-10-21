@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="394.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="des.GUIController">
+  <children>
+    <Button id="bExit" layoutX="354.0" layoutY="21.0" minWidth="23.0" mnemonicParsing="false" onAction="#toExit" prefHeight="22.0" prefWidth="23.0" style="-fx-background-color: RED;" text="X" textFill="WHITE">
+      <font>
+        <Font name="System Bold" size="10.0" />
+      </font>
+    </Button>
+    <Label layoutX="179.0" layoutY="29.0" text="DES">
+      <font>
+        <Font name="System Bold Italic" size="20.0" />
+      </font>
+    </Label>
+    <Label layoutX="36.0" layoutY="77.0" text="Message:" />
+    <Label layoutX="36.0" layoutY="213.0" text="Choose an option:" />
+    <RadioButton fx:id="rEn" layoutX="159.0" layoutY="213.0" mnemonicParsing="false" text="Encryption" />
+    <RadioButton fx:id="rDe" layoutX="267.0" layoutY="213.0" mnemonicParsing="false" text="Decryption" />
+    <Button id="bExit" layoutX="167.0" layoutY="255.0" mnemonicParsing="false" onAction="#toRun" prefHeight="22.0" prefWidth="60.0" text="Run" />
+    <Button id="bExit" layoutX="306.0" layoutY="407.0" mnemonicParsing="false" onAction="#toCopy" prefHeight="22.0" prefWidth="60.0" text="Copy" />
+    <Label layoutX="47.0" layoutY="171.0" text="Key:" />
+    <TextField id="tText" fx:id="tKey" layoutX="99.0" layoutY="168.0" prefWidth="246.0" />
+    <TextArea fx:id="tMsg" layoutX="97.0" layoutY="70.0" prefHeight="88.0" prefWidth="246.0" wrapText="true" />
+    <TextArea fx:id="lblResult" layoutX="32.0" layoutY="380.0" prefHeight="76.0" prefWidth="254.0" wrapText="true" />
+    <TextArea id="lblResult" fx:id="lblHex" layoutX="32.0" layoutY="308.0" prefHeight="60.0" prefWidth="334.0" wrapText="true" />
+    <Label layoutX="36.0" layoutY="285.0" text="Message in hex:" />
+  </children>
+</AnchorPane>
